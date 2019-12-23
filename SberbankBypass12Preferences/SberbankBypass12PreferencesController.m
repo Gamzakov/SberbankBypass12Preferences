@@ -19,7 +19,7 @@
 #define kSetting_MinOSVersion_Value @"12.0"
 
 #define kUrl_FollowOnTwitter @"https://twitter.com/Just_Gamzakov"
-#define kUrl_VisitWebSite @"http://iosopendev.com"
+#define kUrl_VisitWebSite @"https://github.com/Gamzakov/SberbankBypass12/issues/new"
 #define kUrl_MakeDonation @"https://paypal.me/GamzakovDev"
 
 #define kPrefs_Path @"/var/mobile/Library/Preferences"
