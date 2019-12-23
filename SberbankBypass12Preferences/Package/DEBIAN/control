@@ -1,17 +1,9 @@
-Package: com.gamzakovdev.SberbankBypass12Preferences
-Name: SberbankBypass12Preferences
-Version: 0.1-1
-Description: 
-Section: PreferenceBundles
-Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
-Conflicts: 
-Replaces: 
-Priority: optional
+Package: com.gamzakovdev.sberbankbypass12
+Name: SberankBypass (iOS 12+)
+Depends: firmware (>= 12.0), mobilesubstrate, preferenceloader
+Version: 0.0-3
 Architecture: iphoneos-arm
-Author: Алексей Осипов
-dev: 
-Homepage: 
-Depiction: 
-Maintainer: 
-Icon: 
-
+Description: Jailbreak Detection bypass for ios 12 and above. (64 bit only)
+Maintainer: Gamzakov <justgamzakov@gmail.com>
+Author: Gamzakov <justgamzakov@gmail.com>
+Section: Tweaks

@@ -11,7 +11,7 @@
 		<key>icon</key>
 		<string>SberbankBypass12PreferencesIcon.png</string>
 		<key>label</key>
-		<string>SberbankBypass12Preferences</string>
+		<string>SberbankBypass12</string>
 		<key>isController</key>
 		<true/>
 	</dict>

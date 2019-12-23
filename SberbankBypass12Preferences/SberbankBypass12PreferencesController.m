@@ -3,24 +3,24 @@
 //  SberbankBypass12Preferences
 //
 //  Created by Алексей Осипов on 23.12.2019.
-//  Copyright (c) 2019 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2019 ___GAMZAKOVDEV___. All rights reserved.
 //
 
 #import "SberbankBypass12PreferencesController.h"
-#import <Preferences/PSSpecifier.h>
+#import "Preferences.framework/PSListController.h"
 
-#define kSetting_Example_Name @"NameOfAnExampleSetting"
-#define kSetting_Example_Value @"ValueOfAnExampleSetting"
+#define kSetting_SberbankBypassVersion_Name @"SberbankBypassVersion"
+#define kSetting_SberbankBypassVersion_Value @"0.0.3"
 
-#define kSetting_TemplateVersion_Name @"TemplateVersionExample"
-#define kSetting_TemplateVersion_Value @"1.0"
+#define kSetting_TestedSberbankVersion_Name @"TestedSberbankVersion"
+#define kSetting_TestedSberbankVersion_Value @"10.7.0"
 
-#define kSetting_Text_Name @"TextExample"
-#define kSetting_Text_Value @"Go Red Sox!"
+#define kSetting_MinOSVersion_Name @"MinOSVersion"
+#define kSetting_MinOSVersion_Value @"12.0"
 
-#define kUrl_FollowOnTwitter @"https://twitter.com/kokoabim"
+#define kUrl_FollowOnTwitter @"https://twitter.com/Just_Gamzakov"
 #define kUrl_VisitWebSite @"http://iosopendev.com"
-#define kUrl_MakeDonation @"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=56KLKJLXKM9FS"
+#define kUrl_MakeDonation @"https://paypal.me/GamzakovDev"
 
 #define kPrefs_Path @"/var/mobile/Library/Preferences"
 #define kPrefs_KeyName_Key @"key"
@@ -35,15 +35,19 @@
 	NSDictionary *specifierProperties = [specifier properties];
 	NSString *specifierKey = [specifierProperties objectForKey:kPrefs_KeyName_Key];
 	
+    if ([specifierKey isEqual:kSetting_TestedSberbankVersion_Name])
+    {
+        value = kSetting_TestedSberbankVersion_Value;
+    }
 	// get 'value' with code only
-	if ([specifierKey isEqual:kSetting_TemplateVersion_Name])
+	else if ([specifierKey isEqual:kSetting_SberbankBypassVersion_Name])
 	{
-		value = kSetting_TemplateVersion_Value;
+		value = kSetting_SberbankBypassVersion_Value;
 	}
-	else if ([specifierKey isEqual:kSetting_Example_Name])
-	{
-		value = kSetting_Example_Value;
-	}
+    else if ([specifierKey isEqual:kSetting_MinOSVersion_Name])
+    {
+        value = kSetting_MinOSVersion_Value;
+    }
 	// ...or get 'value' from 'defaults' plist or (optionally as a default value) with code
 	else
 	{
@@ -72,19 +76,6 @@
 			[dict release];
 			#endif
 		}
-		
-		// get default 'value' from code
-		if (!value)
-		{
-			if ([specifierKey isEqual:kSetting_Text_Name])
-			{
-				value = kSetting_Text_Value;
-			}
-			else if ([specifierKey isEqual:kSetting_Example_Name])
-			{
-				value = kSetting_Example_Value;
-			}
-		}
 	}
 	
 	return value;
@@ -94,38 +85,23 @@
 {
 	NSDictionary *specifierProperties = [specifier properties];
 	NSString *specifierKey = [specifierProperties objectForKey:kPrefs_KeyName_Key];
-	
-	// use 'value' with code only
-	if ([specifierKey isEqual:kSetting_Example_Name])
-	{
-		// do something here with 'value'...
-	}
-	// ...or save 'value' to 'defaults' plist and (optionally) with code
-	else
-	{
-		// save 'value' to 'defaults' plist (if 'defaults' key exists)
-		NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
-		#if ! __has_feature(objc_arc)
-		plistPath = [plistPath autorelease];
-		#endif
-		if (plistPath)
-		{
-			NSMutableDictionary *dict = (NSMutableDictionary*)[self initDictionaryWithFile:&plistPath asMutable:YES];
-			[dict setObject:value forKey:specifierKey];
-			[dict writeToFile:plistPath atomically:YES];
-			#if ! __has_feature(objc_arc)
-			[dict release];
-			#endif
 
-			NSLog(@"saved key '%@' with value '%@' to plist '%@'", specifierKey, value, plistPath);
-		}
-		
-		// use 'value' with code
-		if ([specifierKey isEqual:kSetting_Example_Name])
-		{
-			// do something here with 'value'...
-		}
-	}
+    // save 'value' to 'defaults' plist (if 'defaults' key exists)
+    NSMutableString *plistPath = [[NSMutableString alloc] initWithString:[specifierProperties objectForKey:kPrefs_KeyName_Defaults]];
+    #if ! __has_feature(objc_arc)
+    plistPath = [plistPath autorelease];
+    #endif
+    if (plistPath)
+    {
+        NSMutableDictionary *dict = (NSMutableDictionary*)[self initDictionaryWithFile:&plistPath asMutable:YES];
+        [dict setObject:value forKey:specifierKey];
+        [dict writeToFile:plistPath atomically:YES];
+        #if ! __has_feature(objc_arc)
+        [dict release];
+        #endif
+
+        NSLog(@"saved key '%@' with value '%@' to plist '%@'", specifierKey, value, plistPath);
+    }
 }
 
 - (id)initDictionaryWithFile:(NSMutableString**)plistPath asMutable:(BOOL)asMutable

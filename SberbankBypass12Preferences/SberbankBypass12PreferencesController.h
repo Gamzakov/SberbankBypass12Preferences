@@ -3,12 +3,12 @@
 //  SberbankBypass12Preferences
 //
 //  Created by Алексей Осипов on 23.12.2019.
-//  Copyright (c) 2019 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) 2019 ___GAMZAKOVDEV___. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <Preferences/Preferences.h>
+#import "Preferences.framework/PSListController.h"
 
 @interface SberbankBypass12PreferencesController : PSListController
 {
