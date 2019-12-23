@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		854EC90823B03C5400F98124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854EC90723B03C5400F98124 /* Foundation.framework */; };
+		854EC90A23B03C5400F98124 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854EC90923B03C5400F98124 /* UIKit.framework */; };
+		854EC90C23B03C5400F98124 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854EC90B23B03C5400F98124 /* Preferences.framework */; };
+		854EC91623B03C5400F98124 /* SberbankBypass12PreferencesController.h in Headers */ = {isa = PBXBuildFile; fileRef = 854EC91523B03C5400F98124 /* SberbankBypass12PreferencesController.h */; };
+		854EC91823B03C5400F98124 /* SberbankBypass12PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 854EC91723B03C5400F98124 /* SberbankBypass12PreferencesController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		854EC90423B03C5400F98124 /* SberbankBypass12Preferences.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SberbankBypass12Preferences.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		854EC90723B03C5400F98124 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		854EC90923B03C5400F98124 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		854EC90B23B03C5400F98124 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		854EC91023B03C5400F98124 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = control.txt; sourceTree = "<group>"; };
+		854EC91123B03C5400F98124 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		854EC91323B03C5400F98124 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PackageVersion.plist; path = ../PackageVersion.plist; sourceTree = "<group>"; };
+		854EC91423B03C5400F98124 /* SberbankBypass12Preferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SberbankBypass12Preferences-Info.plist"; path = "../SberbankBypass12Preferences-Info.plist"; sourceTree = "<group>"; };
+		854EC91523B03C5400F98124 /* SberbankBypass12PreferencesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SberbankBypass12PreferencesController.h; sourceTree = "<group>"; };
+		854EC91723B03C5400F98124 /* SberbankBypass12PreferencesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SberbankBypass12PreferencesController.m; sourceTree = "<group>"; };
+		854EC91C23B03C5400F98124 /* SberbankBypass12Preferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SberbankBypass12Preferences.plist; sourceTree = "<group>"; };
+		854EC91F23B03C5400F98124 /* SberbankBypass12Preferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SberbankBypass12Preferences.plist; path = ../SberbankBypass12Preferences.bundle/SberbankBypass12Preferences.plist; sourceTree = "<group>"; };
+		854EC92023B03C5400F98124 /* SberbankBypass12PreferencesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SberbankBypass12PreferencesIcon.png; path = ../SberbankBypass12Preferences.bundle/SberbankBypass12PreferencesIcon.png; sourceTree = "<group>"; };
+		854EC92123B03C5400F98124 /* SberbankBypass12PreferencesIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SberbankBypass12PreferencesIcon@2x.png"; path = "../SberbankBypass12Preferences.bundle/SberbankBypass12PreferencesIcon@2x.png"; sourceTree = "<group>"; };
+		854EC92623B03C5400F98124 /* com.gamzakovdev.SberbankBypass12Preferences.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.gamzakovdev.SberbankBypass12Preferences.plist; sourceTree = "<group>"; };
+		854EC92723B03C5400F98124 /* SberbankBypass12Preferences-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SberbankBypass12Preferences-Prefix.pch"; path = "../SberbankBypass12Preferences-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		854EC90023B03C5400F98124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854EC90823B03C5400F98124 /* Foundation.framework in Frameworks */,
+				854EC90C23B03C5400F98124 /* Preferences.framework in Frameworks */,
+				854EC90A23B03C5400F98124 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		854EC8FA23B03C5400F98124 = {
+			isa = PBXGroup;
+			children = (
+				854EC90D23B03C5400F98124 /* SberbankBypass12Preferences */,
+				854EC90623B03C5400F98124 /* Frameworks */,
+				854EC90523B03C5400F98124 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		854EC90523B03C5400F98124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				854EC90423B03C5400F98124 /* SberbankBypass12Preferences.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		854EC90623B03C5400F98124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				854EC90723B03C5400F98124 /* Foundation.framework */,
+				854EC90923B03C5400F98124 /* UIKit.framework */,
+				854EC90B23B03C5400F98124 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		854EC90D23B03C5400F98124 /* SberbankBypass12Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91523B03C5400F98124 /* SberbankBypass12PreferencesController.h */,
+				854EC91723B03C5400F98124 /* SberbankBypass12PreferencesController.m */,
+				854EC90E23B03C5400F98124 /* Package */,
+				854EC91223B03C5400F98124 /* Supporting Files */,
+			);
+			path = SberbankBypass12Preferences;
+			sourceTree = "<group>";
+		};
+		854EC90E23B03C5400F98124 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				854EC90F23B03C5400F98124 /* DEBIAN */,
+				854EC91923B03C5400F98124 /* Library */,
+				854EC92223B03C5400F98124 /* var */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		854EC90F23B03C5400F98124 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91023B03C5400F98124 /* control.txt */,
+				854EC91123B03C5400F98124 /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		854EC91223B03C5400F98124 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91323B03C5400F98124 /* PackageVersion.plist */,
+				854EC91423B03C5400F98124 /* SberbankBypass12Preferences-Info.plist */,
+				854EC92723B03C5400F98124 /* SberbankBypass12Preferences-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		854EC91923B03C5400F98124 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91A23B03C5400F98124 /* PreferenceLoader */,
+				854EC91D23B03C5400F98124 /* PreferenceBundles */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		854EC91A23B03C5400F98124 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91B23B03C5400F98124 /* Preferences */,
+			);
+			path = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		854EC91B23B03C5400F98124 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91C23B03C5400F98124 /* SberbankBypass12Preferences.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		854EC91D23B03C5400F98124 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91E23B03C5400F98124 /* ___PACKAGENAME___.bundle */,
+			);
+			path = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		854EC91E23B03C5400F98124 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				854EC91F23B03C5400F98124 /* SberbankBypass12Preferences.plist */,
+				854EC92023B03C5400F98124 /* SberbankBypass12PreferencesIcon.png */,
+				854EC92123B03C5400F98124 /* SberbankBypass12PreferencesIcon@2x.png */,
+			);
+			path = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		854EC92223B03C5400F98124 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				854EC92323B03C5400F98124 /* mobile */,
+			);
+			path = var;
+			sourceTree = "<group>";
+		};
+		854EC92323B03C5400F98124 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				854EC92423B03C5400F98124 /* Library */,
+			);
+			path = mobile;
+			sourceTree = "<group>";
+		};
+		854EC92423B03C5400F98124 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				854EC92523B03C5400F98124 /* Preferences */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		854EC92523B03C5400F98124 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				854EC92623B03C5400F98124 /* com.gamzakovdev.SberbankBypass12Preferences.plist */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		854EC90123B03C5400F98124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854EC91623B03C5400F98124 /* SberbankBypass12PreferencesController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		854EC90323B03C5400F98124 /* SberbankBypass12Preferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854EC92A23B03C5400F98124 /* Build configuration list for PBXNativeTarget "SberbankBypass12Preferences" */;
+			buildPhases = (
+				854EC8FF23B03C5400F98124 /* Sources */,
+				854EC90023B03C5400F98124 /* Frameworks */,
+				854EC90123B03C5400F98124 /* Headers */,
+				854EC90223B03C5400F98124 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SberbankBypass12Preferences;
+			productName = SberbankBypass12Preferences;
+			productReference = 854EC90423B03C5400F98124 /* SberbankBypass12Preferences.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		854EC8FB23B03C5400F98124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					854EC90323B03C5400F98124 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 854EC8FE23B03C5400F98124 /* Build configuration list for PBXProject "SberbankBypass12Preferences" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 854EC8FA23B03C5400F98124;
+			productRefGroup = 854EC90523B03C5400F98124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				854EC90323B03C5400F98124 /* SberbankBypass12Preferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		854EC90223B03C5400F98124 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		854EC8FF23B03C5400F98124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854EC91823B03C5400F98124 /* SberbankBypass12PreferencesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		854EC92823B03C5400F98124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		854EC92923B03C5400F98124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		854EC92B23B03C5400F98124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKF4ZBG2R6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SberbankBypass12Preferences/SberbankBypass12Preferences-Prefix.pch";
+				INFOPLIST_FILE = "SberbankBypass12Preferences/SberbankBypass12Preferences-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		854EC92C23B03C5400F98124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKF4ZBG2R6;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SberbankBypass12Preferences/SberbankBypass12Preferences-Prefix.pch";
+				INFOPLIST_FILE = "SberbankBypass12Preferences/SberbankBypass12Preferences-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		854EC8FE23B03C5400F98124 /* Build configuration list for PBXProject "SberbankBypass12Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854EC92823B03C5400F98124 /* Debug */,
+				854EC92923B03C5400F98124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		854EC92A23B03C5400F98124 /* Build configuration list for PBXNativeTarget "SberbankBypass12Preferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854EC92B23B03C5400F98124 /* Debug */,
+				854EC92C23B03C5400F98124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 854EC8FB23B03C5400F98124 /* Project object */;
+}
