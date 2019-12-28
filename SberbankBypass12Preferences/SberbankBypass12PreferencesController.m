@@ -10,7 +10,7 @@
 #import "Preferences.framework/PSListController.h"
 
 #define kSetting_SberbankBypassVersion_Name @"SberbankBypassVersion"
-#define kSetting_SberbankBypassVersion_Value @"0.0.3"
+#define kSetting_SberbankBypassVersion_Value @"0.0.3-3"
 
 #define kSetting_TestedSberbankVersion_Name @"TestedSberbankVersion"
 #define kSetting_TestedSberbankVersion_Value @"10.7.0"
@@ -128,17 +128,20 @@
 
 - (void)followOnTwitter:(PSSpecifier*)specifier
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_FollowOnTwitter]];
+    NSURL *twitterURL = [NSURL URLWithString:kUrl_FollowOnTwitter];
+    [[UIApplication sharedApplication] openURL:twitterURL options:@{} completionHandler:nil];
 }
 
 - (void)visitWebSite:(PSSpecifier*)specifier
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_VisitWebSite]];
+    NSURL *issuesURL = [NSURL URLWithString:kUrl_VisitWebSite];
+	[[UIApplication sharedApplication] openURL:issuesURL options:@{} completionHandler:nil];
 }
 
 - (void)makeDonation:(PSSpecifier *)specifier
 {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:kUrl_MakeDonation]];
+    NSURL *paypalURL = [NSURL URLWithString:kUrl_MakeDonation];
+	[[UIApplication sharedApplication] openURL:paypalURL options:@{} completionHandler:nil];
 }
 
 - (id)specifiers
